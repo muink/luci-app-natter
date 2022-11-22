@@ -1,0 +1,18 @@
+
+config natter
+	option enabled '0'
+	option log_level 'info'
+	option keepalive_server 'www.baidu.com'
+	list tcp_stun 'stun.nextcloud.com'
+	list tcp_stun 'fwa.lifesizecloud.com'
+	list tcp_stun 'stun.isp.net.au'
+	list tcp_stun 'stun.freeswitch.org'
+	list tcp_stun 'stun.voip.blackberry.com'
+	list tcp_stun 'stun.stunprotocol.org'
+	list tcp_stun 'stun.sipnet.com'
+	list tcp_stun 'stun.radiojar.com'
+	list tcp_stun 'stun.sonetel.com'
+	list tcp_stun 'stun.voipgate.com'
+	list udp_stun 'stun.miwifi.com'
+	list udp_stun 'stun.qq.com'
+

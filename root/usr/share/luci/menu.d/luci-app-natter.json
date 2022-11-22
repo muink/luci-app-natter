@@ -1,0 +1,29 @@
+{
+  "admin/network/natter": {
+    "title": "Natter",
+    "order": 70,
+    "action": {
+      "type": "firstchild"
+    },
+    "depends": {
+      "acl": [ "luci-app-natter" ],
+      "uci": { "natter": true }
+    }
+  },
+  "admin/network/natter/natter": {
+    "title": "Settings",
+    "order": 1,
+    "action": {
+      "type": "view",
+      "path": "natter/main"
+    }
+  },
+  "admin/network/natter/log": {
+    "title": "Log",
+    "order": 2,
+    "action": {
+      "type": "view",
+      "path": "natter/log"
+    }
+  }
+}

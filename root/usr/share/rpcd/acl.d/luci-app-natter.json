@@ -1,0 +1,16 @@
+{
+  "luci-app-natter": {
+    "description": "Grant access to Natter procedures",
+    "read": {
+      "file": {
+        "/usr/libexec/natter/natcheck.sh": [ "exec" ],
+        "/tmp/natter_type_fixed": [ "read" ],
+        "/tmp/natter_type_random": [ "read" ]
+      },
+      "uci": [ "natter" ]
+    },
+    "write": {
+      "uci": [ "natter" ]
+    }
+  }
+}
