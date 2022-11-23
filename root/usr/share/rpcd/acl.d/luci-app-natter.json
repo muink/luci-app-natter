@@ -4,6 +4,7 @@
     "read": {
       "file": {
         "/usr/libexec/natter/natcheck.sh": [ "exec" ],
+        "/var/natter/natter.log": [ "read" ],
         "/tmp/natter_type_fixed": [ "read" ],
         "/tmp/natter_type_random": [ "read" ]
       },
