@@ -19,8 +19,8 @@ return view.extend({
 	},
 
 	render: function(res) {
-		var natter_type_fixed  = res[0] ? res[0].split("\n") : [],
-			natter_type_random = res[1] ? res[1].split("\n") : [];
+		var natter_type_fixed  = res[0] ? res[0].trim().split("\n") : [],
+			natter_type_random = res[1] ? res[1].trim().split("\n") : [];
 
 		var m, s, o;
 
@@ -62,7 +62,7 @@ return view.extend({
 		};
 
 		o = s.option(form.Button, '_check_random', _('Check NAT Status (Random port)'),
-			_('If the result is not NAT 1, forward mode will not be available.'));
+			_('If the result is not NAT 1,') + ' ' + _('Via Natter') + ' ' + _('mode will not be available.'));
 		o.inputtitle = _('Check');
 		o.inputstyle = 'apply';
 		o.onclick = function() {
@@ -113,6 +113,70 @@ return view.extend({
 		o.placeholder = 'stun.qq.com';
 		o.default = 'stun.miwifi.com';
 		o.rmempty = false;
+
+		s = m.section(form.GridSection, 'portrule', _('Port Rules'));
+		s.sortable  = true;
+		s.anonymous = true;
+		s.addremove = true;
+
+		o = s.option(form.Flag, 'enabled', _('Enable'));
+		o.default = o.enabled;
+		o.editable = true;
+		o.rmempty = false;
+
+		o = s.option(form.Value, 'name', _('Name'));
+		o.rmempty = false;
+
+		o = s.option(form.ListValue, 'action', _('Action'));
+		o.value('bind', 'bind - ' + _('Just Open Ports'));
+		o.value('forward', 'forward - ' + _('Service Instances'));
+		o.default = 'bind';
+		o.rempty = false;
+		//o.modalonly = true;
+
+		o = s.option(form.ListValue, 'mode', _('Forward Mode'),
+			_('Via Natter') + ' ' + _('mode requires Random port test is NAT 1'));
+		o.value('dnat', 'dnat - ' + _('Firewall DNAT'));
+		o.value('via', 'via - ' + _('Via Natter'));
+		o.default = 'dnat';
+		o.rempty = false;
+		o.depends('action', 'forward');
+
+		o = s.option(form.Value, 'bind_ip', _('External Listen Addr'));
+		o.datatype = 'ip4addr';
+		o.default = '0.0.0.0';
+		o.rmempty = false;
+		o.depends('action', 'bind');
+		o.depends('mode', 'dnat');
+
+		o = s.option(form.Value, 'bind_pool', _('Open External Port pool'),
+			_('Dont be greedy, will affect performance.'));
+		o.datatype = 'portrange'
+		o.placeholder = '3456-3457'
+		o.rempty = false;
+		o.depends('action', 'bind');
+
+		o = s.option(form.Value, 'bind_port', _('Open External Port'));
+		o.datatype = "range(1, 65535)";
+		o.placeholder = '3456'
+		o.rempty = false;
+		o.depends('mode', 'dnat');
+
+		o = s.option(form.Value, 'server_ip', _('Internal Server IP'));
+		o.datatype = "host(1)";
+		o.rmempty = false;
+		o.depends('action', 'forward');
+
+		o = s.option(form.Value, 'server_port', _('Internal Server Port'));
+		o.datatype = "range(1, 65535)";
+		o.rempty = false;
+		o.depends('action', 'forward');
+
+		o = s.option(form.ListValue, 'proto', _('Protocol Type'));
+		o.value('udp', _('UDP'));
+		o.value('tcp', _('TCP'));
+		o.default = 'udp';
+		o.rempty = false;
 
 		return m.render();
 	}
