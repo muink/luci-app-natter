@@ -1,9 +1,19 @@
 'use strict';
 'require view';
 'require fs';
+'require rpc';
 'require uci';
 'require ui';
 'require form';
+'require tools.widgets as widgets';
+
+var callHostHints;
+
+callHostHints = rpc.declare({
+	object: 'luci-rpc',
+	method: 'getHostHints',
+	expect: { '': {} }
+});
 
 return view.extend({
 //	handleSaveApply: null,
@@ -14,13 +24,15 @@ return view.extend({
 	return Promise.all([
 		L.resolveDefault(fs.read('/tmp/natter_type_fixed'), null),
 		L.resolveDefault(fs.read('/tmp/natter_type_random'), null),
+		callHostHints(),
 		uci.load('natter'),
 	]);
 	},
 
 	render: function(res) {
 		var natter_type_fixed  = res[0] ? res[0].trim().split("\n") : [],
-			natter_type_random = res[1] ? res[1].trim().split("\n") : [];
+			natter_type_random = res[1] ? res[1].trim().split("\n") : [],
+			hosts = res[2];
 
 		var m, s, o;
 
@@ -124,6 +136,10 @@ return view.extend({
 		o.editable = true;
 		o.rmempty = false;
 
+		o = s.option(form.Value, 'id', _('ID'), _('Just keep default, or ensure uniqueness'));
+		o.modalonly = true;
+		o.rmempty = false;
+
 		o = s.option(form.Value, 'name', _('Name'));
 		o.rmempty = false;
 
@@ -142,12 +158,21 @@ return view.extend({
 		o.rempty = false;
 		o.depends('action', 'forward');
 
-		o = s.option(form.Value, 'bind_ip', _('External Listen Addr'));
-		o.datatype = 'ip4addr';
-		o.default = '0.0.0.0';
-		o.rmempty = false;
+		o = s.option(widgets.DeviceSelect, 'bind_iface', _('External Listen Interface'));
+		o.multiple = false;
+		o.noaliases = true;
+		o.nobridges = true;
+		o.nocreate = false;
+		o.rmempty = true;
 		o.depends('action', 'bind');
 		o.depends('mode', 'dnat');
+
+		//o = s.option(form.Value, 'bind_ip', _('External Listen Addr'));
+		//o.datatype = 'ip4addr';
+		//o.default = '0.0.0.0';
+		//o.rmempty = false;
+		//o.depends('action', 'bind');
+		//o.depends('mode', 'dnat');
 
 		o = s.option(form.Value, 'bind_pool', _('Open External Port pool'),
 			_('Dont be greedy, will affect performance.'));
@@ -163,9 +188,25 @@ return view.extend({
 		o.depends('mode', 'dnat');
 
 		o = s.option(form.Value, 'server_ip', _('Internal Server IP'));
-		o.datatype = "host(1)";
+		o.datatype = 'ip4addr';
 		o.rmempty = false;
 		o.depends('action', 'forward');
+
+		var ipaddrs = {};
+		Object.keys(hosts).forEach(function(mac) {
+			var addrs = L.toArray(hosts[mac].ipaddrs || hosts[mac].ipv4);
+
+			for (var i = 0; i < addrs.length; i++)
+				ipaddrs[addrs[i]] = hosts[mac].name || mac;
+		});
+		L.sortedKeys(ipaddrs, null, 'addr').forEach(function(ipv4) {
+			o.value(ipv4, ipaddrs[ipv4] ? '%s (%s)'.format(ipv4, ipaddrs[ipv4]) : ipv4);
+		});
+
+		//o = s.option(form.Value, 'server_ip', _('Internal Server IP'));
+		//o.datatype = "host(1)";
+		//o.rmempty = false;
+		//o.depends('action', 'forward');
 
 		o = s.option(form.Value, 'server_port', _('Internal Server Port'));
 		o.datatype = "range(1, 65535)";
