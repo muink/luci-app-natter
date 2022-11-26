@@ -24,6 +24,7 @@ return view.extend({
 	return Promise.all([
 		L.resolveDefault(fs.read('/tmp/natter_type_fixed'), null),
 		L.resolveDefault(fs.read('/tmp/natter_type_random'), null),
+		L.resolveDefault(fs.read('/var/natter/natter-status.json'), null),
 		callHostHints(),
 		uci.load('natter'),
 	]);
@@ -32,14 +33,48 @@ return view.extend({
 	render: function(res) {
 		var natter_type_fixed  = res[0] ? res[0].trim().split("\n") : [],
 			natter_type_random = res[1] ? res[1].trim().split("\n") : [],
-			hosts = res[2];
+			natter_status_json = res[2] ? res[2].trim() : null,
+			hosts = res[3];
 
 		var m, s, o;
 
 		m = new form.Map('natter', _('Natter'),
 			_('Open Port under FullCone NAT (NAT 1)'));
 
-		s = m.section(form.TypedSection, 'natter');
+		s = m.section(form.GridSection, '_active_maps');
+
+		s.render = L.bind(function(view, section_id) {
+			var table = E('table', { 'class': 'table cbi-section-table', 'id': 'natter_status_table' }, [
+				E('tr', { 'class': 'tr table-titles' }, [
+					E('th', { 'class': 'th' }, _('Protocol')),
+					E('th', { 'class': 'th' }, _('Internal Addr')),
+					E('th', { 'class': 'th' }, _('Internal Port')),
+					E('th', { 'class': 'th' }, _('Internet Addr')),
+					E('th', { 'class': 'th' }, _('Internet Port')),
+					E('th', { 'class': 'th cbi-section-actions' }, '')
+				])
+			]);
+			var maps = JSON.parse(natter_status_json);
+			var rows = [];
+			if (maps) {
+				Object.keys(maps).forEach(key => {
+				    for (var i = 0; i < maps[key].length; i++) {
+						rows.push([
+							key,
+							maps[key][i].inner.split(':')[0],
+							maps[key][i].inner.split(':')[1],
+							maps[key][i].outer.split(':')[0],
+							maps[key][i].outer.split(':')[1]
+						]);
+				    }
+				});
+			};
+			cbi_update_table(table, rows.sort(), E('em', _('There are no active portmap')));
+			return E('div', { 'class': 'cbi-section cbi-tblsection' }, [
+					E('h3', _('Active Portmap')), table ]);
+		}, o, this);
+
+		s = m.section(form.TypedSection, 'natter', _('Natter Settings'));
 		s.anonymous = true;
 
 		o = s.option(form.Flag, 'enabled', _('Enable'));
