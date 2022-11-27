@@ -1,5 +1,6 @@
 'use strict';
 'require view';
+'require poll';
 'require fs';
 'require rpc';
 'require uci';
@@ -28,6 +29,26 @@ return view.extend({
 		callHostHints(),
 		uci.load('natter'),
 	]);
+	},
+
+	poll_status: function(nodes, json) {
+		var maps = JSON.parse(json[0] ? json[0].trim() : null);
+		var rows = [];
+		if (maps) {
+			Object.keys(maps).forEach(key => {
+			    for (var i = 0; i < maps[key].length; i++) {
+					rows.push([
+						key,
+						maps[key][i].inner.split(':')[0],
+						maps[key][i].inner.split(':')[1],
+						maps[key][i].outer.split(':')[0],
+						maps[key][i].outer.split(':')[1]
+					]);
+			    }
+			});
+		};
+		cbi_update_table(nodes.querySelector('#natter_status_table'), rows.sort(), E('em', _('There are no active portmap')));
+		return;
 	},
 
 	render: function(res) {
@@ -254,6 +275,14 @@ return view.extend({
 		o.default = 'udp';
 		o.rempty = false;
 
-		return m.render();
+		return m.render()
+		.then(L.bind(function(m, nodes) {
+			poll.add(L.bind(function() {
+				return Promise.all([
+					L.resolveDefault(fs.read('/var/natter/natter-status.json'), null)
+				]).then(L.bind(this.poll_status, this, nodes));
+			}, this), 5);
+			return nodes;
+		}, this, m));
 	}
 });
