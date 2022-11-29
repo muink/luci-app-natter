@@ -245,6 +245,7 @@ return view.extend({
 
 		o = s.option(form.Value, 'server_ip', _('Internal Server IP'));
 		o.datatype = 'ip4addr';
+		o.value('127.0.0.1', _('127.0.0.1 (This device)'));
 		o.rmempty = false;
 		o.depends('action', 'forward');
 
