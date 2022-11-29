@@ -18,9 +18,17 @@
       "path": "natter/main"
     }
   },
+  "admin/network/natter/custom": {
+    "title": "Custom Script",
+    "order": 2,
+    "action": {
+      "type": "view",
+      "path": "natter/custom"
+    }
+  },
   "admin/network/natter/log": {
     "title": "Log",
-    "order": 2,
+    "order": 3,
     "action": {
       "type": "view",
       "path": "natter/log"

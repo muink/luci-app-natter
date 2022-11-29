@@ -4,14 +4,24 @@
     "read": {
       "file": {
         "/usr/libexec/natter/natcheck.sh": [ "exec" ],
+        "/etc/natter/custom-script.sh": [ "read" ],
         "/var/natter/natter.log": [ "read" ],
         "/var/natter/natter-status.json": [ "read" ],
         "/tmp/natter_type_fixed": [ "read" ],
         "/tmp/natter_type_random": [ "read" ]
       },
+      "ubus": {
+        "file": [ "read" ]
+      },
       "uci": [ "natter" ]
     },
     "write": {
+      "file": {
+        "/etc/natter/custom-script.sh": [ "write" ]
+      },
+      "ubus": {
+        "file": [ "write" ]
+      },
       "uci": [ "natter" ]
     }
   }
