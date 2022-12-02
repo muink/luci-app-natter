@@ -230,17 +230,11 @@ return view.extend({
 		//o.depends('action', 'bind');
 		//o.depends('mode', 'dnat');
 
-		o = s.option(form.Value, 'bind_pool', _('Open External Port pool'),
-			_('Dont be greedy, will affect performance.'));
-		o.datatype = 'portrange'
-		o.placeholder = '3456-3457'
-		o.rempty = false;
-		o.depends('action', 'bind');
-
 		o = s.option(form.Value, 'bind_port', _('Open External Port'));
 		o.datatype = "range(1, 65535)";
 		o.placeholder = '3456'
 		o.rempty = false;
+		o.depends('action', 'bind');
 		o.depends('mode', 'dnat');
 
 		o = s.option(form.Value, 'server_ip', _('Internal Server IP'));
