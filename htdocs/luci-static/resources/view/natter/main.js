@@ -192,11 +192,11 @@ return view.extend({
 		o.editable = true;
 		o.rmempty = false;
 
-		o = s.option(form.Value, 'id', _('ID'), _('Just keep default, or ensure uniqueness'));
-		o.modalonly = true;
-		o.rmempty = false;
+		//o = s.option(form.Value, 'id', _('ID'), _('Just keep default, or ensure uniqueness'));
+		//o.modalonly = true;
+		//o.rmempty = false;
 
-		o = s.option(form.Value, 'name', _('Name'));
+		o = s.option(form.Value, 'comment', _('Comment'));
 		o.rmempty = false;
 
 		o = s.option(form.ListValue, 'action', _('Action'));
