@@ -41,7 +41,7 @@ return baseclass.extend({
 			});
 		};
 
-		cbi_update_table(table, rows.sort(), E('em', _('There are no active redirects.')));
+		cbi_update_table(table, rows.sort(), E('em', _('There are no active portmap')));
 
 		return table;
 	}

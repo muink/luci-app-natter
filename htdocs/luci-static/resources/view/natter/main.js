@@ -102,7 +102,7 @@ return view.extend({
 		o.rmempty = false;
 
 		o = s.option(form.Button, '_check_fixed', _('Check NAT Status (Port 3456)'),
-			_('Please check if the <a href="%s"><b>rule</b></a> <b>\'NatTypeTest\'</b> exists first.').format(L.url('admin', 'network', 'firewall', 'rules')));
+			_('Please check if the <a href="%s"><b>rule</b></a> <b>\'NatTypeTest\'</b> exists and enabled first.').format(L.url('admin', 'network', 'firewall', 'rules')));
 		o.inputtitle = _('Check');
 		o.inputstyle = 'apply';
 		o.onclick = function() {
