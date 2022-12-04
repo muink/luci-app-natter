@@ -203,7 +203,7 @@ return view.extend({
 		o.value('bind', 'bind - ' + _('Just Open Ports'));
 		o.value('forward', 'forward - ' + _('Service Instances'));
 		o.default = 'bind';
-		o.rempty = false;
+		o.rmempty = false;
 		//o.modalonly = true;
 
 		o = s.option(form.ListValue, 'mode', _('Forward Mode'),
@@ -211,7 +211,7 @@ return view.extend({
 		o.value('dnat', 'dnat - ' + _('Firewall DNAT'));
 		o.value('via', 'via - ' + _('Via Natter'));
 		o.default = 'dnat';
-		o.rempty = false;
+		o.rmempty = false;
 		o.depends('action', 'forward');
 
 		o = s.option(widgets.DeviceSelect, 'bind_iface', _('External Listen Interface'));
@@ -232,8 +232,7 @@ return view.extend({
 
 		o = s.option(form.Value, 'bind_port', _('Open External Port'));
 		o.datatype = "range(1, 65535)";
-		o.placeholder = '3456'
-		o.rempty = false;
+		o.rmempty = false;
 		o.depends('action', 'bind');
 		o.depends('mode', 'dnat');
 
@@ -261,14 +260,14 @@ return view.extend({
 
 		o = s.option(form.Value, 'server_port', _('Internal Server Port'));
 		o.datatype = "range(1, 65535)";
-		o.rempty = false;
+		o.rmempty = false;
 		o.depends('action', 'forward');
 
 		o = s.option(form.ListValue, 'proto', _('Protocol Type'));
 		o.value('udp', _('UDP'));
 		o.value('tcp', _('TCP'));
 		o.default = 'udp';
-		o.rempty = false;
+		o.rmempty = false;
 
 		return m.render()
 		.then(L.bind(function(m, nodes) {
