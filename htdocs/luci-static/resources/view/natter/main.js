@@ -215,7 +215,7 @@ return view.extend({
 		o.depends('action', 'forward');
 
 		o = s.option(widgets.DeviceSelect, 'bind_iface', _('External Listen Interface'));
-		o.multiple = false;
+		o.multiple = true;
 		o.noaliases = true;
 		o.nobridges = true;
 		o.nocreate = false;
