@@ -14,7 +14,6 @@ Open Port under FullCone NAT (NAT 1)
 4. Upload and install ipk
 5. Reboot if the app is not automatically added in page
 6. Goto **Network --> Natter**
-7. If after program update. LuCI is not working properly, please reinstall luci-app-natter.
 
 ### Build
 
