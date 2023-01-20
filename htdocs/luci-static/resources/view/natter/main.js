@@ -238,7 +238,8 @@ return view.extend({
 
 		o = s.option(form.Value, 'server_ip', _('Internal Server IP'));
 		o.datatype = 'ip4addr';
-		o.value('127.0.0.1', _('127.0.0.1 (This device)'));
+		o.value('127.0.0.1', '127.0.0.1 ' + _('(This device default Lan)'));
+		o.value('0.0.0.0', '0.0.0.0 ' + _('(This device default Wan)'));
 		o.default = '127.0.0.1';
 		o.rmempty = false;
 		o.depends('action', 'forward');

@@ -13,8 +13,12 @@ msgstr ""
 "X-Generator: Weblate 4.12.1-dev\n"
 
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:241
-msgid "127.0.0.1 (This device)"
-msgstr "127.0.0.1 (本裝置)"
+msgid "(This device default Lan)"
+msgstr "(本裝置默認 LAN)"
+
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:242
+msgid "(This device default Wan)"
+msgstr "(本裝置默認 WAN)"
 
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:202
 msgid "Action"
@@ -28,7 +32,7 @@ msgstr "活動的 Natter 埠映射"
 msgid "Active Portmap"
 msgstr "活動的埠映射"
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:270
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:271
 msgid "Both"
 msgstr "兩者"
 
@@ -112,7 +116,7 @@ msgstr "內部通訊埠"
 msgid "Internal Server IP"
 msgstr "內部伺服器 IP"
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:262
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:263
 msgid "Internal Server Port"
 msgstr "內部伺服器埠"
 
@@ -179,7 +183,7 @@ msgstr "通訊埠規則"
 msgid "Protocol"
 msgstr "協定"
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:267
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:268
 msgid "Protocol Type"
 msgstr "協定類型"
 
@@ -191,7 +195,7 @@ msgstr "服務實例"
 msgid "Settings"
 msgstr "設定"
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:269
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:270
 msgid "TCP"
 msgstr ""
 
@@ -205,7 +209,7 @@ msgstr "TCP STUN 伺服器"
 msgid "There are no active portmap"
 msgstr "沒有活動的通訊埠映射"
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:268
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:269
 msgid "UDP"
 msgstr ""
 
