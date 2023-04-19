@@ -3,6 +3,7 @@
     "description": "Grant access to Natter procedures",
     "read": {
       "file": {
+        "/usr/share/natter/natter-hook.sh": [ "read" ],
         "/usr/libexec/natter/natcheck.sh": [ "exec" ],
         "/etc/natter/custom-script.sh": [ "read" ],
         "/var/natter/natter.log": [ "read" ],

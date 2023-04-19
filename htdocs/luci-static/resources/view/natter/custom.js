@@ -10,7 +10,10 @@ handleSaveApply: null,
 handleReset: null,
 
 	load: function() {
-		return L.resolveDefault(fs.read('/etc/natter/custom-script.sh'), '');
+	return Promise.all([
+		L.resolveDefault(fs.read('/etc/natter/custom-script.sh'), ''),
+		L.resolveDefault(fs.read('/usr/share/natter/natter-hook.sh'), '')
+	]);
 	},
 
 	handleSave: function(ev) {
@@ -27,7 +30,9 @@ handleReset: null,
 	render: function(conf) {
 		return E([
 			E('h4', _('Edit Natter Custom script: <code>/etc/natter/custom-script.sh</code>')),
-			E('p', {}, E('textarea', { 'style': 'width:100%', 'rows': 25, 'disabled': isReadonlyView }, [ conf != null ? conf : '' ]))
+			E('p', {}, E('textarea', { 'style': 'width:100%', 'rows': 25, 'disabled': isReadonlyView }, [ conf[0] != null ? conf[0] : '' ])),
+			E('h4', _('View Natter Hook script: <code>/usr/share/natter/natter-hook.sh</code>')),
+			E('p', {}, E('textarea', { 'style': 'width:100%', 'rows': 10, 'readonly': 'readonly', 'disabled': true }, [ conf[1] != null ? conf[1] : '' ]))
 		]);
 	}
 });

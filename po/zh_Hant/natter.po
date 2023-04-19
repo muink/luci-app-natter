@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2022-12-02 28:20+0000\n"
+"PO-Revision-Date: 2023-04-19 01:43+0000\n"
 "Last-Translator: muink <hukk1996@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
 "openwrt/luciapplicationsnatter/zh_Hant/>\n"
@@ -53,7 +53,7 @@ msgstr "檢查 NAT 狀態 (隨機通訊埠)"
 msgid "Comment"
 msgstr "備註"
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/custom.js:21
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/custom.js:24
 msgid "Contents have been saved."
 msgstr ""
 
@@ -65,7 +65,7 @@ msgstr "自定義腳本"
 msgid "Debug"
 msgstr "調試"
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/custom.js:29
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/custom.js:32
 msgid "Edit Natter Custom script: <code>/etc/natter/custom-script.sh</code>"
 msgstr "編輯 Natter 自定義腳本: <code>/etc/natter/custom-script.sh</code>"
 
@@ -217,7 +217,7 @@ msgstr ""
 msgid "UDP STUN Server"
 msgstr "UDP STUN 伺服器"
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/custom.js:23
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/custom.js:26
 msgid "Unable to save contents: %s"
 msgstr ""
 
@@ -226,6 +226,10 @@ msgstr ""
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:212
 msgid "Via Natter"
 msgstr ""
+
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/custom.js:34
+msgid "View Natter Hook script: <code>/usr/share/natter/natter-hook.sh</code>"
+msgstr "查看 Natter Hook 腳本: <code>/usr/share/natter/natter-hook.sh</code>"
 
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:162
 msgid "Warning"
