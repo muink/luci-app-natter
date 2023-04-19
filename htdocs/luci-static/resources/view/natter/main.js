@@ -224,7 +224,7 @@ return view.extend({
 		o.depends('mode', 'dnat');
 
 		//o = s.option(form.Value, 'bind_ip', _('External Listen Addr'));
-		//o.datatype = 'ip4addr';
+		//o.datatype = 'ip4addr(1)';
 		//o.default = '0.0.0.0';
 		//o.rmempty = false;
 		//o.depends('action', 'bind');
@@ -237,7 +237,7 @@ return view.extend({
 		o.depends('mode', 'dnat');
 
 		o = s.option(form.Value, 'server_ip', _('Internal Server IP'));
-		o.datatype = 'ip4addr';
+		o.datatype = 'ip4addr(1)';
 		o.value('127.0.0.1', '127.0.0.1 ' + _('(This device default Lan)'));
 		o.value('0.0.0.0', '0.0.0.0 ' + _('(This device default Wan)'));
 		o.default = '127.0.0.1';
