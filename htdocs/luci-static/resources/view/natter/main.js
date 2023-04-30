@@ -212,6 +212,7 @@ return view.extend({
 		o.value('via', 'via - ' + _('Via Natter'));
 		o.default = 'dnat';
 		o.rmempty = false;
+		o.retain = true;
 		o.depends('action', 'forward');
 
 		o = s.option(widgets.DeviceSelect, 'bind_iface', _('External Listen Interface'));
@@ -233,6 +234,7 @@ return view.extend({
 		o = s.option(form.Value, 'bind_port', _('Open External Port'));
 		o.datatype = "range(1, 65535)";
 		o.rmempty = false;
+		o.retain = true;
 		o.depends('action', 'bind');
 		o.depends('mode', 'dnat');
 
@@ -242,6 +244,7 @@ return view.extend({
 		o.value('0.0.0.0', '0.0.0.0 ' + _('(This device default Wan)'));
 		o.default = '127.0.0.1';
 		o.rmempty = false;
+		o.retain = true;
 		o.depends('action', 'forward');
 
 		var ipaddrs = {};
@@ -263,6 +266,7 @@ return view.extend({
 		o = s.option(form.Value, 'server_port', _('Internal Server Port'));
 		o.datatype = "range(1, 65535)";
 		o.rmempty = false;
+		o.retain = true;
 		o.depends('action', 'forward');
 
 		o = s.option(form.ListValue, 'proto', _('Protocol Type'));
