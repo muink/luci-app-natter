@@ -263,11 +263,18 @@ return view.extend({
 		//o.rmempty = false;
 		//o.depends('action', 'forward');
 
+		o = s.option(form.Flag, 'follow_pub_port', _('Internal Port follow Internet Port'));
+		o.default = o.disabled;
+		o.rmempty = false;
+		o.retain = true;
+		o.depends('mode', 'dnat');
+
 		o = s.option(form.Value, 'server_port', _('Internal Server Port'));
 		o.datatype = "range(1, 65535)";
 		o.rmempty = false;
 		o.retain = true;
-		o.depends('action', 'forward');
+		o.depends('mode', 'via');
+		o.depends({ mode: 'dnat', follow_pub_port: '0' });
 
 		o = s.option(form.ListValue, 'proto', _('Protocol Type'));
 		o.value('udp', _('UDP'));
