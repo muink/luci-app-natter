@@ -68,8 +68,8 @@ return view.extend({
 			var table = E('table', { 'class': 'table cbi-section-table', 'id': 'natter_status_table' }, [
 				E('tr', { 'class': 'tr table-titles' }, [
 					E('th', { 'class': 'th' }, _('Protocol')),
-					E('th', { 'class': 'th' }, _('Internal Addr')),
-					E('th', { 'class': 'th' }, _('Internal Port')),
+					E('th', { 'class': 'th' }, _('External Addr')),
+					E('th', { 'class': 'th' }, _('External Port')),
 					E('th', { 'class': 'th' }, _('Internet Addr')),
 					E('th', { 'class': 'th' }, _('Internet Port')),
 					E('th', { 'class': 'th cbi-section-actions' }, '')

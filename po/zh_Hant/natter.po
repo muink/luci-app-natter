@@ -104,13 +104,13 @@ msgstr "信息"
 
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:71
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/status/include/70_natter.js:20
-msgid "Internal Addr"
-msgstr "內部地址"
+msgid "External Addr"
+msgstr "外部地址"
 
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:72
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/status/include/70_natter.js:21
-msgid "Internal Port"
-msgstr "內部通訊埠"
+msgid "External Port"
+msgstr "外部通訊埠"
 
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:239
 msgid "Internal Server IP"

@@ -93,12 +93,12 @@ msgstr ""
 
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:71
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/status/include/70_natter.js:20
-msgid "Internal Addr"
+msgid "External Addr"
 msgstr ""
 
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:72
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/status/include/70_natter.js:21
-msgid "Internal Port"
+msgid "External Port"
 msgstr ""
 
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:239
