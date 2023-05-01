@@ -115,7 +115,7 @@ return view.extend({
 		};
 
 		if (natter_type_fixed.length) {
-			o = s.option(form.DummyValue, '_status_fixed', ' ');
+			o = s.option(form.DummyValue, '_status_fixed', '　');
 			o.rawhtml = true;
 			o.cfgvalue = function(s) {
 				//return natter_type_fixed[0] + '<br>' + natter_type_fixed[1];
@@ -143,7 +143,7 @@ return view.extend({
 		};
 
 		if (natter_type_random.length) {
-			o = s.option(form.DummyValue, '_status_fixed', ' ');
+			o = s.option(form.DummyValue, '_status_fixed', '　');
 			o.rawhtml = true;
 			o.cfgvalue = function(s) {
 				return E('div', {}, [
