@@ -12,11 +12,11 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 4.12.1-dev\n"
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:241
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:243
 msgid "(This device default Lan)"
 msgstr "(本裝置默認 LAN)"
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:242
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:244
 msgid "(This device default Wan)"
 msgstr "(本裝置默認 WAN)"
 
@@ -32,7 +32,7 @@ msgstr "活動的 Natter 埠映射"
 msgid "Active Portmap"
 msgstr "活動的埠映射"
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:271
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:283
 msgid "Both"
 msgstr "兩者"
 
@@ -78,9 +78,19 @@ msgstr "啟用"
 msgid "Error"
 msgstr "錯誤"
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:217
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:71
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/status/include/70_natter.js:20
+msgid "External Addr"
+msgstr "外部地址"
+
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:218
 msgid "External Listen Interface"
 msgstr "外部偵聽介面"
+
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:72
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/status/include/70_natter.js:21
+msgid "External Port"
+msgstr "外部通訊埠"
 
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:211
 msgid "Firewall DNAT"
@@ -102,21 +112,15 @@ msgstr "如果結果不是 NAT 1，"
 msgid "Info"
 msgstr "信息"
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:71
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/status/include/70_natter.js:20
-msgid "External Addr"
-msgstr "外部地址"
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:266
+msgid "Internal Port follow Internet Port"
+msgstr "內部伺服器埠跟隨網際網路通訊埠"
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:72
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/status/include/70_natter.js:21
-msgid "External Port"
-msgstr "外部通訊埠"
-
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:239
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:241
 msgid "Internal Server IP"
 msgstr "內部伺服器 IP"
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:263
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:273
 msgid "Internal Server Port"
 msgstr "內部伺服器埠"
 
@@ -159,7 +163,7 @@ msgstr "Natter 日誌: <code>/var/natter/natter.log</code>"
 msgid "Natter Settings"
 msgstr "Natter 設定"
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:233
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:234
 msgid "Open External Port"
 msgstr "開放外部通訊埠"
 
@@ -183,7 +187,7 @@ msgstr "通訊埠規則"
 msgid "Protocol"
 msgstr "協定"
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:268
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:280
 msgid "Protocol Type"
 msgstr "協定類型"
 
@@ -195,7 +199,7 @@ msgstr "服務實例"
 msgid "Settings"
 msgstr "設定"
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:270
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:282
 msgid "TCP"
 msgstr ""
 
@@ -209,7 +213,7 @@ msgstr "TCP STUN 伺服器"
 msgid "There are no active portmap"
 msgstr "沒有活動的通訊埠映射"
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:269
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:281
 msgid "UDP"
 msgstr ""
 
