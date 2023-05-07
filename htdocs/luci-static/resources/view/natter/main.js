@@ -215,7 +215,7 @@ return view.extend({
 		o.retain = true;
 		o.depends('action', 'forward');
 
-		o = s.option(widgets.DeviceSelect, 'bind_iface', _('External Listen Interface'));
+		o = s.option(widgets.DeviceSelect, 'bind_ifname', _('External Listen Interface'));
 		o.multiple = true;
 		o.noaliases = true;
 		o.nobridges = true;
