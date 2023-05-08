@@ -197,6 +197,7 @@ return view.extend({
 		//o.rmempty = false;
 
 		o = s.option(form.Value, 'comment', _('Comment'));
+		o.datatype = 'uciname';
 		o.rmempty = false;
 
 		o = s.option(form.ListValue, 'action', _('Action'));
