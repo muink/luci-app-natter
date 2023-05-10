@@ -284,6 +284,11 @@ return view.extend({
 		o.default = 'both';
 		o.rmempty = false;
 
+		o = s.option(form.Flag, 'loopback', _('Nat loopback'));
+		o.default = o.enabled;
+		o.rmempty = true;
+		o.depends({ mode: 'dnat', follow_pub_port: '0' });
+
 		return m.render()
 		.then(L.bind(function(m, nodes) {
 			poll.add(L.bind(function() {
