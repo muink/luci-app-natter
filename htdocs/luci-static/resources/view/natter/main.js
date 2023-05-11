@@ -264,7 +264,8 @@ return view.extend({
 		//o.rmempty = false;
 		//o.depends('action', 'forward');
 
-		o = s.option(form.Flag, 'follow_pub_port', _('Internal Port follow Internet Port'));
+		o = s.option(form.Flag, 'follow_pub_port', _('Dynport'),
+			_('Internal Port follow Internet Port'));
 		o.default = o.disabled;
 		o.rmempty = false;
 		o.retain = true;
