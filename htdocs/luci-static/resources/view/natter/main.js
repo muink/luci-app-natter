@@ -279,7 +279,7 @@ return view.extend({
 		o.depends({ mode: 'dnat', follow_pub_port: '0' });
 
 		o = s.option(form.ListValue, 'proto', _('Protocol Type'),
-			_('When ') + _('Dynport') + (' is enabled, please donot select ') + _('Both'));
+			_('When ') + _('Dynport') + ('is enabled, please donot select ') + _('Both'));
 		o.value('udp', _('UDP'));
 		o.value('tcp', _('TCP'));
 		o.value('both', _('Both'));
@@ -294,7 +294,7 @@ return view.extend({
 			}
 		};
 
-		o = s.option(form.Flag, 'loopback', _('Nat loopback'));
+		o = s.option(form.Flag, 'loopback', _('NAT loopback'));
 		o.default = o.enabled;
 		o.rmempty = true;
 		o.depends('mode', 'dnat');

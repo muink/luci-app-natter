@@ -12,15 +12,15 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 4.12.1-dev\n"
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:243
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:244
 msgid "(This device default Lan)"
 msgstr "(本裝置默認 LAN)"
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:244
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:245
 msgid "(This device default Wan)"
 msgstr "(本裝置默認 WAN)"
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:202
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:203
 msgid "Action"
 msgstr "動作"
 
@@ -32,7 +32,8 @@ msgstr "活動的 Natter 埠映射"
 msgid "Active Portmap"
 msgstr "活動的埠映射"
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:283
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:282
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:285
 msgid "Both"
 msgstr "兩者"
 
@@ -65,6 +66,11 @@ msgstr "自定義腳本"
 msgid "Debug"
 msgstr "調試"
 
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:267
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:282
+msgid "Dynport"
+msgstr "動態埠"
+
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/custom.js:32
 msgid "Edit Natter Custom script: <code>/etc/natter/custom-script.sh</code>"
 msgstr "編輯 Natter 自定義腳本: <code>/etc/natter/custom-script.sh</code>"
@@ -83,7 +89,7 @@ msgstr "錯誤"
 msgid "External Addr"
 msgstr "外部地址"
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:218
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:219
 msgid "External Listen Interface"
 msgstr "外部偵聽介面"
 
@@ -92,17 +98,21 @@ msgstr "外部偵聽介面"
 msgid "External Port"
 msgstr "外部通訊埠"
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:211
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:212
 msgid "Firewall DNAT"
 msgstr "防火牆 DNAT"
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:209
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:210
 msgid "Forward Mode"
 msgstr "轉發模式"
 
 #: applications/luci-app-natter/root/usr/share/rpcd/acl.d/luci-app-natter.json:3
 msgid "Grant access to Natter procedures"
 msgstr "授予訪問 LuCI 應用 Natter 的權限"
+
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:282
+msgid "is enabled, please donot select"
+msgstr "啟用, 請不要選中"
 
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:133
 msgid "If the result is not NAT 1,"
@@ -112,15 +122,15 @@ msgstr "如果結果不是 NAT 1，"
 msgid "Info"
 msgstr "信息"
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:266
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:268
 msgid "Internal Port follow Internet Port"
 msgstr "內部伺服器埠跟隨網際網路通訊埠"
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:241
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:242
 msgid "Internal Server IP"
 msgstr "內部伺服器 IP"
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:273
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:274
 msgid "Internal Server Port"
 msgstr "內部伺服器埠"
 
@@ -134,7 +144,7 @@ msgstr "網際網路地址"
 msgid "Internet Port"
 msgstr "網際網路通訊埠"
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:203
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:204
 msgid "Just Open Ports"
 msgstr "僅開放通訊埠"
 
@@ -150,6 +160,10 @@ msgstr "日誌"
 msgid "Log level"
 msgstr "日誌等級"
 
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:297
+msgid "NAT loopback"
+msgstr "NAT 環回"
+
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:62
 #: applications/luci-app-natter/root/usr/share/luci/menu.d/luci-app-natter.json:3
 msgid "Natter"
@@ -163,7 +177,7 @@ msgstr "Natter 日誌: <code>/var/natter/natter.log</code>"
 msgid "Natter Settings"
 msgstr "Natter 設定"
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:234
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:235
 msgid "Open External Port"
 msgstr "開放外部通訊埠"
 
@@ -187,11 +201,11 @@ msgstr "通訊埠規則"
 msgid "Protocol"
 msgstr "協定"
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:280
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:281
 msgid "Protocol Type"
 msgstr "協定類型"
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:204
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:205
 msgid "Service Instances"
 msgstr "服務實例"
 
@@ -199,7 +213,7 @@ msgstr "服務實例"
 msgid "Settings"
 msgstr "設定"
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:282
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:284
 msgid "TCP"
 msgstr ""
 
@@ -213,7 +227,7 @@ msgstr "TCP STUN 伺服器"
 msgid "There are no active portmap"
 msgstr "沒有活動的通訊埠映射"
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:281
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:283
 msgid "UDP"
 msgstr ""
 
@@ -226,8 +240,8 @@ msgid "Unable to save contents: %s"
 msgstr ""
 
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:133
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:210
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:212
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:211
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:213
 msgid "Via Natter"
 msgstr ""
 
@@ -239,7 +253,11 @@ msgstr "查看 Natter Hook 腳本: <code>/usr/share/natter/natter-hook.sh</code>
 msgid "Warning"
 msgstr "警告"
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:210
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:282
+msgid "When"
+msgstr "當"
+
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:211
 msgid "mode requires Random port test is NAT 1"
 msgstr "模式要求隨機通訊埠檢測結果為 NAT 1"
 

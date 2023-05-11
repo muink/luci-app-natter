@@ -1,15 +1,15 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=UTF-8"
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:243
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:244
 msgid "(This device default Lan)"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:244
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:245
 msgid "(This device default Wan)"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:202
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:203
 msgid "Action"
 msgstr ""
 
@@ -21,7 +21,8 @@ msgstr ""
 msgid "Active Portmap"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:283
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:282
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:285
 msgid "Both"
 msgstr ""
 
@@ -54,6 +55,11 @@ msgstr ""
 msgid "Debug"
 msgstr ""
 
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:267
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:282
+msgid "Dynport"
+msgstr ""
+
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/custom.js:32
 msgid "Edit Natter Custom script: <code>/etc/natter/custom-script.sh</code>"
 msgstr ""
@@ -72,7 +78,7 @@ msgstr ""
 msgid "External Addr"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:218
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:219
 msgid "External Listen Interface"
 msgstr ""
 
@@ -81,16 +87,20 @@ msgstr ""
 msgid "External Port"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:211
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:212
 msgid "Firewall DNAT"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:209
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:210
 msgid "Forward Mode"
 msgstr ""
 
 #: applications/luci-app-natter/root/usr/share/rpcd/acl.d/luci-app-natter.json:3
 msgid "Grant access to Natter procedures"
+msgstr ""
+
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:282
+msgid "is enabled, please donot select"
 msgstr ""
 
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:133
@@ -101,15 +111,15 @@ msgstr ""
 msgid "Info"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:266
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:268
 msgid "Internal Port follow Internet Port"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:241
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:242
 msgid "Internal Server IP"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:273
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:274
 msgid "Internal Server Port"
 msgstr ""
 
@@ -123,7 +133,7 @@ msgstr ""
 msgid "Internet Port"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:203
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:204
 msgid "Just Open Ports"
 msgstr ""
 
@@ -139,6 +149,10 @@ msgstr ""
 msgid "Log level"
 msgstr ""
 
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:297
+msgid "NAT loopback"
+msgstr ""
+
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:62
 #: applications/luci-app-natter/root/usr/share/luci/menu.d/luci-app-natter.json:3
 msgid "Natter"
@@ -152,7 +166,7 @@ msgstr ""
 msgid "Natter Settings"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:234
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:235
 msgid "Open External Port"
 msgstr ""
 
@@ -175,11 +189,11 @@ msgstr ""
 msgid "Protocol"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:280
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:281
 msgid "Protocol Type"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:204
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:205
 msgid "Service Instances"
 msgstr ""
 
@@ -187,7 +201,7 @@ msgstr ""
 msgid "Settings"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:282
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:284
 msgid "TCP"
 msgstr ""
 
@@ -201,7 +215,7 @@ msgstr ""
 msgid "There are no active portmap"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:281
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:283
 msgid "UDP"
 msgstr ""
 
@@ -214,8 +228,8 @@ msgid "Unable to save contents: %s"
 msgstr ""
 
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:133
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:210
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:212
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:211
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:213
 msgid "Via Natter"
 msgstr ""
 
@@ -227,7 +241,11 @@ msgstr ""
 msgid "Warning"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:210
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:282
+msgid "When"
+msgstr ""
+
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:211
 msgid "mode requires Random port test is NAT 1"
 msgstr ""
 
