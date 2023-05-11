@@ -8,7 +8,7 @@ Open Port under FullCone NAT (NAT 1)
 
 ### How to install
 
-1. Goto [releases](https://github.com/muink/luci-app-natter/tree/releases)
+1. Goto ~~[releases](https://github.com/muink/luci-app-natter/tree/releases)~~ [here](https://fantastic-packages.github.io/packages/)
 2. Download the latest version of ipk
 3. Login router and goto **System --> Software**
 4. Upload and install ipk
