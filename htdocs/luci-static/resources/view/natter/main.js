@@ -296,7 +296,7 @@ return view.extend({
 		o = s.option(form.Flag, 'loopback', _('Nat loopback'));
 		o.default = o.enabled;
 		o.rmempty = true;
-		o.depends({ mode: 'dnat', follow_pub_port: '0' });
+		o.depends('mode', 'dnat');
 
 		return m.render()
 		.then(L.bind(function(m, nodes) {
