@@ -277,12 +277,21 @@ return view.extend({
 		o.depends('mode', 'via');
 		o.depends({ mode: 'dnat', follow_pub_port: '0' });
 
-		o = s.option(form.ListValue, 'proto', _('Protocol Type'));
+		o = s.option(form.ListValue, 'proto', _('Protocol Type'),
+			_('When ') + _('Dynport') + (' is enabled, please donot select ') + _('Both'));
 		o.value('udp', _('UDP'));
 		o.value('tcp', _('TCP'));
 		o.value('both', _('Both'));
 		o.default = 'both';
 		o.rmempty = false;
+		o.write = function(section, value) {
+			let dyn = uci.get('natter', section, 'follow_pub_port') || '0';
+			if ( value == 'both' && dyn == '1' ) {
+				uci.set('natter', section, 'proto', 'udp');
+			} else {
+				uci.set('natter', section, 'proto', value);
+			}
+		};
 
 		o = s.option(form.Flag, 'loopback', _('Nat loopback'));
 		o.default = o.enabled;
