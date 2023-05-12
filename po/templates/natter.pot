@@ -56,7 +56,6 @@ msgid "Debug"
 msgstr ""
 
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:267
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:282
 msgid "Dynport"
 msgstr ""
 
@@ -97,10 +96,6 @@ msgstr ""
 
 #: applications/luci-app-natter/root/usr/share/rpcd/acl.d/luci-app-natter.json:3
 msgid "Grant access to Natter procedures"
-msgstr ""
-
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:282
-msgid "is enabled, please donot select"
 msgstr ""
 
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:133
@@ -242,7 +237,7 @@ msgid "Warning"
 msgstr ""
 
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:282
-msgid "When"
+msgid "When Dynport is enabled, please donot select"
 msgstr ""
 
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:211

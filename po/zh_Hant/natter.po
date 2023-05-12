@@ -67,7 +67,6 @@ msgid "Debug"
 msgstr "調試"
 
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:267
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:282
 msgid "Dynport"
 msgstr "動態埠"
 
@@ -109,10 +108,6 @@ msgstr "轉發模式"
 #: applications/luci-app-natter/root/usr/share/rpcd/acl.d/luci-app-natter.json:3
 msgid "Grant access to Natter procedures"
 msgstr "授予訪問 LuCI 應用 Natter 的權限"
-
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:282
-msgid "is enabled, please donot select"
-msgstr "啟用, 請不要選中"
 
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:133
 msgid "If the result is not NAT 1,"
@@ -254,8 +249,8 @@ msgid "Warning"
 msgstr "警告"
 
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:282
-msgid "When"
-msgstr "當"
+msgid "When Dynport is enabled, please donot select"
+msgstr "當 動態埠 啟用, 請不要選中 "
 
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:211
 msgid "mode requires Random port test is NAT 1"
