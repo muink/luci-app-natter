@@ -39,6 +39,10 @@ msgstr ""
 msgid "Check NAT Status (Random port)"
 msgstr ""
 
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:309
+msgid "Client Name"
+msgstr ""
+
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:199
 msgid "Comment"
 msgstr ""
@@ -169,6 +173,10 @@ msgstr ""
 msgid "Open Port under FullCone NAT (NAT 1)"
 msgstr ""
 
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:340
+msgid "Password"
+msgstr ""
+
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:105
 msgid ""
 "Please check if the <a href=\"%s\"><b>rule</b></a> <b>'NatTypeTest'</b> "
@@ -186,6 +194,10 @@ msgstr ""
 
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:281
 msgid "Protocol Type"
+msgstr ""
+
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:302
+msgid "Refresh client listen port"
 msgstr ""
 
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:205
@@ -210,6 +222,10 @@ msgstr ""
 msgid "There are no active portmap"
 msgstr ""
 
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:311
+msgid "Transmission"
+msgstr ""
+
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:283
 msgid "UDP"
 msgstr ""
@@ -218,8 +234,16 @@ msgstr ""
 msgid "UDP STUN Server"
 msgstr ""
 
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:318
+msgid "URI Scheme"
+msgstr ""
+
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/custom.js:26
 msgid "Unable to save contents: %s"
+msgstr ""
+
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:334
+msgid "Username"
 msgstr ""
 
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:133
@@ -236,6 +260,10 @@ msgstr ""
 msgid "Warning"
 msgstr ""
 
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:326
+msgid "Web UI Port"
+msgstr ""
+
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:282
 msgid "When Dynport is enabled, please donot select"
 msgstr ""
@@ -246,4 +274,8 @@ msgstr ""
 
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:133
 msgid "mode will not be available."
+msgstr ""
+
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:310
+msgid "qBittorrent"
 msgstr ""

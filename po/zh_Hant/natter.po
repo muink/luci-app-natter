@@ -50,6 +50,10 @@ msgstr "檢查 NAT 狀態 (通訊埠: 3456)"
 msgid "Check NAT Status (Random port)"
 msgstr "檢查 NAT 狀態 (隨機通訊埠)"
 
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:309
+msgid "Client Name"
+msgstr "用戶端名稱"
+
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:199
 msgid "Comment"
 msgstr "備註"
@@ -180,6 +184,10 @@ msgstr "開放外部通訊埠"
 msgid "Open Port under FullCone NAT (NAT 1)"
 msgstr "在 FullCone NAT (NAT 1) 網路下開放通訊埠"
 
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:340
+msgid "Password"
+msgstr "密碼"
+
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:105
 msgid ""
 "Please check if the <a href=\"%s\"><b>rule</b></a> <b>'NatTypeTest'</b> "
@@ -199,6 +207,10 @@ msgstr "協定"
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:281
 msgid "Protocol Type"
 msgstr "協定類型"
+
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:302
+msgid "Refresh client listen port"
+msgstr "刷新用戶端監聽埠"
 
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:205
 msgid "Service Instances"
@@ -222,6 +234,10 @@ msgstr "TCP STUN 伺服器"
 msgid "There are no active portmap"
 msgstr "沒有活動的通訊埠映射"
 
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:311
+msgid "Transmission"
+msgstr ""
+
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:283
 msgid "UDP"
 msgstr ""
@@ -230,9 +246,17 @@ msgstr ""
 msgid "UDP STUN Server"
 msgstr "UDP STUN 伺服器"
 
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:318
+msgid "URI Scheme"
+msgstr ""
+
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/custom.js:26
 msgid "Unable to save contents: %s"
 msgstr ""
+
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:334
+msgid "Username"
+msgstr "用戶名"
 
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:133
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:211
@@ -248,6 +272,10 @@ msgstr "查看 Natter Hook 腳本: <code>/usr/share/natter/natter-hook.sh</code>
 msgid "Warning"
 msgstr "警告"
 
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:326
+msgid "Web UI Port"
+msgstr "Web UI 通訊埠"
+
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:282
 msgid "When Dynport is enabled, please donot select"
 msgstr "當 動態埠 啟用, 請不要選中 "
@@ -259,3 +287,7 @@ msgstr "模式要求隨機通訊埠檢測結果為 NAT 1"
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:133
 msgid "mode will not be available."
 msgstr "模式將不可用"
+
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:310
+msgid "qBittorrent"
+msgstr ""
