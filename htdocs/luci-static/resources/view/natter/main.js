@@ -299,6 +299,50 @@ return view.extend({
 		o.rmempty = true;
 		o.depends('mode', 'dnat');
 
+		o = s.option(form.Flag, 'refresh_port', _('Refresh client listen port'));
+		o.default = o.enabled;
+		o.rmempty = false;
+		o.retain = true;
+		o.depends({ mode: 'dnat', follow_pub_port: '1' });
+		o.modalonly = true;
+
+		o = s.option(form.ListValue, 'appname', _('Client Name'));
+		o.value('qbt', _('qBittorrent'));
+		o.value('tr', _('Transmission'));
+		o.default = 'qbt';
+		o.rmempty = false;
+		o.retain = true;
+		o.depends('refresh_port', '1');
+		o.modalonly = true;
+
+		o = s.option(form.ListValue, 'scheme', _('URI Scheme'));
+		o.value('http', 'HTTP');
+		o.value('https', 'HTTPS');
+		o.default = 'http';
+		o.rmempty = true;
+		o.depends('refresh_port', '1');
+		o.modalonly = true;
+
+		o = s.option(form.Value, 'web_port', _('Web UI Port'));
+		o.datatype = "range(1, 65535)";
+		o.default = '8080';
+		o.rmempty = false;
+		o.retain = true;
+		o.depends('refresh_port', '1');
+		o.modalonly = true;
+
+		o = s.option(form.Value, 'username', _('Username'));
+		o.rmempty = false;
+		o.retain = true;
+		o.depends('refresh_port', '1');
+		o.modalonly = true;
+
+		o = s.option(form.Value, 'password', _('Password'));
+		o.password = true;
+		o.rmempty = true;
+		o.depends('refresh_port', '1');
+		o.modalonly = true;
+
 		return m.render()
 		.then(L.bind(function(m, nodes) {
 			poll.add(L.bind(function() {
