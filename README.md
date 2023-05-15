@@ -2,6 +2,15 @@
 
 Open Port under FullCone NAT (NAT 1)
 
+### Features included outside of Natter
+- [x] Automatically configure the Firewall
+- [x] NAT Loopback support
+- [x] Transparent Port forward (Dynport)
+- [x] Refresh the listen port of the BT Client
+- [ ] Port update Notification script
+- [ ] Domain 302 Redirect update script
+- [ ] A/SRV Record update script
+
 ### Screenshots
 
 ![natter](.img/natter.png "natter")  
