@@ -299,7 +299,7 @@ return view.extend({
 		o.rmempty = true;
 		o.depends('mode', 'dnat');
 
-		o = s.option(form.Flag, 'refresh_port', _('Refresh client listen port'));
+		o = s.option(form.Flag, 'refresh', _('Refresh client listen port'));
 		o.default = o.enabled;
 		o.rmempty = false;
 		o.retain = true;
@@ -312,7 +312,7 @@ return view.extend({
 		o.default = 'qbt';
 		o.rmempty = false;
 		o.retain = true;
-		o.depends('refresh_port', '1');
+		o.depends('refresh', '1');
 		o.modalonly = true;
 
 		o = s.option(form.ListValue, 'scheme', _('URI Scheme'));
@@ -320,7 +320,7 @@ return view.extend({
 		o.value('https', 'HTTPS');
 		o.default = 'http';
 		o.rmempty = true;
-		o.depends('refresh_port', '1');
+		o.depends('refresh', '1');
 		o.modalonly = true;
 
 		o = s.option(form.Value, 'web_port', _('Web UI Port'));
@@ -328,19 +328,19 @@ return view.extend({
 		o.default = '8080';
 		o.rmempty = false;
 		o.retain = true;
-		o.depends('refresh_port', '1');
+		o.depends('refresh', '1');
 		o.modalonly = true;
 
 		o = s.option(form.Value, 'username', _('Username'));
 		o.rmempty = false;
 		o.retain = true;
-		o.depends('refresh_port', '1');
+		o.depends('refresh', '1');
 		o.modalonly = true;
 
 		o = s.option(form.Value, 'password', _('Password'));
 		o.password = true;
 		o.rmempty = true;
-		o.depends('refresh_port', '1');
+		o.depends('refresh', '1');
 		o.modalonly = true;
 
 		return m.render()
