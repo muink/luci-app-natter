@@ -5,6 +5,7 @@
       "file": {
         "/usr/share/natter/natter-hook.sh": [ "read" ],
         "/usr/libexec/natter/natcheck.sh": [ "exec" ],
+        "/etc/natter/notify": [ "list" ],
         "/etc/natter/custom-script.sh": [ "read" ],
         "/var/natter/natter.log": [ "read" ],
         "/var/natter/natter-status.json": [ "read" ],
