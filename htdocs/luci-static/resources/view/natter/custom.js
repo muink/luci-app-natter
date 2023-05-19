@@ -32,7 +32,7 @@ handleReset: null,
 			E('h4', _('Edit Natter Custom script: <code>/etc/natter/custom-script.sh</code>')),
 			E('p', {}, E('textarea', { 'style': 'width:100%', 'rows': 25, 'disabled': isReadonlyView }, [ conf[0] != null ? conf[0] : '' ])),
 			E('h4', _('View Natter Hook script: <code>/usr/share/natter/natter-hook.sh</code>')),
-			E('p', {}, E('textarea', { 'style': 'width:100%', 'rows': 10, 'readonly': 'readonly', 'disabled': true }, [ conf[1] != null ? conf[1] : '' ]))
+			E('p', {}, E('textarea', { 'style': 'width:100%', 'rows': 12, 'readonly': 'readonly', 'disabled': true }, [ conf[1] != null ? conf[1] : '' ]))
 		]);
 	}
 });
