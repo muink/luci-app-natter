@@ -44,6 +44,7 @@ msgid "Client Name"
 msgstr ""
 
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:199
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/notify.js:37
 msgid "Comment"
 msgstr ""
 
@@ -51,7 +52,7 @@ msgstr ""
 msgid "Contents have been saved."
 msgstr ""
 
-#: applications/luci-app-natter/root/usr/share/luci/menu.d/luci-app-natter.json:22
+#: applications/luci-app-natter/root/usr/share/luci/menu.d/luci-app-natter.json:30
 msgid "Custom Script"
 msgstr ""
 
@@ -69,6 +70,7 @@ msgstr ""
 
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:101
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:190
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/notify.js:32
 msgid "Enable"
 msgstr ""
 
@@ -140,7 +142,7 @@ msgstr ""
 msgid "Keep-Alive Server"
 msgstr ""
 
-#: applications/luci-app-natter/root/usr/share/luci/menu.d/luci-app-natter.json:30
+#: applications/luci-app-natter/root/usr/share/luci/menu.d/luci-app-natter.json:38
 msgid "Log"
 msgstr ""
 
@@ -165,6 +167,14 @@ msgstr ""
 msgid "Natter Settings"
 msgstr ""
 
+#: applications/luci-app-natter/root/usr/share/luci/menu.d/luci-app-natter.json:22
+msgid "Notify"
+msgstr ""
+
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/notify.js:27
+msgid "Notify Scripts"
+msgstr ""
+
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:235
 msgid "Open External Port"
 msgstr ""
@@ -179,12 +189,16 @@ msgstr ""
 
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:105
 msgid ""
-"Please check if the <a href=\"%s\"><b>rule</b></a> <b>'NatTypeTest'</b> "
-"exists and enabled first."
+"Please check if the <a href=\"%s\" target=\"_blank\"><b>rule</b></a> "
+"<b>'NatTypeTest'</b> exists and enabled first."
 msgstr ""
 
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:185
 msgid "Port Rules"
+msgstr ""
+
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/notify.js:60
+msgid "Private API Domain"
 msgstr ""
 
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:70
@@ -198,6 +212,10 @@ msgstr ""
 
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:302
 msgid "Refresh client listen port"
+msgstr ""
+
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/notify.js:41
+msgid "Script"
 msgstr ""
 
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:205
@@ -216,10 +234,26 @@ msgstr ""
 msgid "TCP STUN Server"
 msgstr ""
 
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/notify.js:66
+msgid "Text content"
+msgstr ""
+
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/notify.js:52
+msgid ""
+"The KEY required by the script above. See <a href=\"%s\" target=\"_blank\">"
+"%s*.sh</a> for the format of KEY required by each script. Add multiple "
+"entries here in KEY=VAL shell variable format to supply multiple KEY "
+"variables."
+msgstr ""
+
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:50
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:93
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/status/include/70_natter.js:44
 msgid "There are no active portmap"
+msgstr ""
+
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/notify.js:51
+msgid "Tokens"
 msgstr ""
 
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:311
