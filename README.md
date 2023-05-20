@@ -7,7 +7,7 @@ Open Port under FullCone NAT (NAT 1)
 - [x] NAT Loopback support
 - [x] Transparent Port forward (Dynport)
 - [x] Refresh the listen port of the BT Client
-- [ ] Port update Notification script
+- [x] Port update notify script
 - [ ] Domain 302 Redirect update script
 - [ ] A/SRV Record update script
 
