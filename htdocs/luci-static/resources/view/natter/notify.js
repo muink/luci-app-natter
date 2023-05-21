@@ -54,6 +54,7 @@ return view.extend({
 				'Add multiple entries here in KEY=VAL shell variable format to supply multiple KEY variables.')
 			.format('https://github.com/muink/openwrt-Natter/tree/master/files/notify/'));
 		o.datatype = 'list(string)';
+		o.placeholder = 'KEY=VAL';
 		o.rmempty = false;
 		o.modalonly = true;
 

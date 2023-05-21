@@ -197,7 +197,7 @@ msgstr ""
 msgid "Port Rules"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/notify.js:60
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/notify.js:61
 msgid "Private API Domain"
 msgstr ""
 
@@ -234,7 +234,7 @@ msgstr ""
 msgid "TCP STUN Server"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/notify.js:66
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/notify.js:67
 msgid "Text content"
 msgstr ""
 

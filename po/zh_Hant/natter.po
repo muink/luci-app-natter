@@ -203,14 +203,14 @@ msgid ""
 "Please check if the <a href=\"%s\" target=\"_blank\"><b>rule</b></a> "
 "<b>'NatTypeTest'</b> exists and enabled first."
 msgstr ""
-"請先檢查<a href=\"%s\" target=\"_blank\"><b>規則"
-"</b></a> <b>'NatTypeTest'</b>是否存在並啟用"
+"請先檢查<a href=\"%s\" target=\"_blank\"><b>規則</b></a> <b>'NatTypeTest'</b>"
+"是否存在並啟用"
 
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:185
 msgid "Port Rules"
 msgstr "通訊埠規則"
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/notify.js:60
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/notify.js:61
 msgid "Private API Domain"
 msgstr "私有 API 域名"
 
@@ -247,7 +247,7 @@ msgstr ""
 msgid "TCP STUN Server"
 msgstr "TCP STUN 伺服器"
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/notify.js:66
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/notify.js:67
 msgid "Text content"
 msgstr "文本內容"
 
@@ -258,9 +258,8 @@ msgid ""
 "entries here in KEY=VAL shell variable format to supply multiple KEY "
 "variables."
 msgstr ""
-"上面腳本所需的 KEY。請參閱 <a href=\"%s\" target=\"_blank\">"
-"%s*.sh</a> 以獲得對應腳本所需的 KEY 清單。請輸入格式為 "
-"KEY=VAL 的多個 KEY 條目"
+"上面腳本所需的 KEY。請參閱 <a href=\"%s\" target=\"_blank\">%s*.sh</a> 以獲得"
+"對應腳本所需的 KEY 清單。請輸入格式為 KEY=VAL 的多個 KEY 條目"
 
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:50
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:93
