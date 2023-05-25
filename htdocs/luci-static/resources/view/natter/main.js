@@ -239,6 +239,22 @@ return view.extend({
 		o.depends('action', 'bind');
 		o.depends('mode', 'dnat');
 
+		o = s.option(form.ListValue, 'proto', _('Protocol Type'),
+			_('When Dynport is enabled, please donot select ') + _('Both'));
+		o.value('udp', _('UDP'));
+		o.value('tcp', _('TCP'));
+		o.value('both', _('Both'));
+		o.default = 'both';
+		o.rmempty = false;
+		o.write = function(section, value) {
+			let dyn = uci.get('natter', section, 'follow_pub_port') || '0';
+			if ( value == 'both' && dyn == '1' ) {
+				uci.set('natter', section, 'proto', 'udp');
+			} else {
+				uci.set('natter', section, 'proto', value);
+			}
+		};
+
 		o = s.option(form.Value, 'server_ip', _('Internal Server IP'));
 		o.datatype = 'ip4addr(1)';
 		o.value('127.0.0.1', '127.0.0.1 ' + _('(This device default Lan)'));
@@ -264,13 +280,6 @@ return view.extend({
 		//o.rmempty = false;
 		//o.depends('action', 'forward');
 
-		o = s.option(form.Flag, 'follow_pub_port', _('Dynport'),
-			_('Internal Port follow Internet Port'));
-		o.default = o.disabled;
-		o.rmempty = false;
-		o.retain = true;
-		o.depends('mode', 'dnat');
-
 		o = s.option(form.Value, 'server_port', _('Internal Server Port'));
 		o.datatype = "range(1, 65535)";
 		o.rmempty = false;
@@ -278,25 +287,11 @@ return view.extend({
 		o.depends('mode', 'via');
 		o.depends({ mode: 'dnat', follow_pub_port: '0' });
 
-		o = s.option(form.ListValue, 'proto', _('Protocol Type'),
-			_('When Dynport is enabled, please donot select ') + _('Both'));
-		o.value('udp', _('UDP'));
-		o.value('tcp', _('TCP'));
-		o.value('both', _('Both'));
-		o.default = 'both';
+		o = s.option(form.Flag, 'follow_pub_port', _('Dynport'),
+			_('Internal Port follow Internet Port'));
+		o.default = o.disabled;
 		o.rmempty = false;
-		o.write = function(section, value) {
-			let dyn = uci.get('natter', section, 'follow_pub_port') || '0';
-			if ( value == 'both' && dyn == '1' ) {
-				uci.set('natter', section, 'proto', 'udp');
-			} else {
-				uci.set('natter', section, 'proto', value);
-			}
-		};
-
-		o = s.option(form.Flag, 'loopback', _('NAT loopback'));
-		o.default = o.enabled;
-		o.rmempty = true;
+		o.retain = true;
 		o.depends('mode', 'dnat');
 
 		o = s.option(form.Flag, 'refresh', _('Refresh client listen port'));
@@ -342,6 +337,11 @@ return view.extend({
 		o.rmempty = true;
 		o.depends('refresh', '1');
 		o.modalonly = true;
+
+		o = s.option(form.Flag, 'loopback', _('NAT loopback'));
+		o.default = o.enabled;
+		o.rmempty = true;
+		o.depends('mode', 'dnat');
 
 		return m.render()
 		.then(L.bind(function(m, nodes) {
