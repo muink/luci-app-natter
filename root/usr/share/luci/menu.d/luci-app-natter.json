@@ -26,6 +26,14 @@
       "path": "natter/notify"
     }
   },
+  "admin/network/natter/ddns": {
+    "title": "DDNS",
+    "order": 30,
+    "action": {
+      "type": "view",
+      "path": "natter/ddns"
+    }
+  },
   "admin/network/natter/custom": {
     "title": "Custom Script",
     "order": 40,
