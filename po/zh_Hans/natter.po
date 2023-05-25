@@ -12,11 +12,11 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 4.12.1-dev\n"
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:244
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:260
 msgid "(This device default Lan)"
 msgstr "(此装置默认 LAN)"
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:245
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:261
 msgid "(This device default Wan)"
 msgstr "(此装置默认 WAN)"
 
@@ -32,8 +32,8 @@ msgstr "活动的 Natter 端口映射"
 msgid "Active Portmap"
 msgstr "活动的 Natter 端口映射"
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:282
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:285
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:243
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:246
 msgid "Both"
 msgstr "两者"
 
@@ -50,10 +50,11 @@ msgstr "检测 NAT 状态 (端口: 3456)"
 msgid "Check NAT Status (Random port)"
 msgstr "检测 NAT 状态 (随机端口)"
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:309
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:304
 msgid "Client Name"
 msgstr "客户端名称"
 
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/ddns.js:38
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:199
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/notify.js:37
 msgid "Comment"
@@ -63,15 +64,23 @@ msgstr "备注"
 msgid "Contents have been saved."
 msgstr ""
 
-#: applications/luci-app-natter/root/usr/share/luci/menu.d/luci-app-natter.json:30
+#: applications/luci-app-natter/root/usr/share/luci/menu.d/luci-app-natter.json:38
 msgid "Custom Script"
 msgstr "自定义脚本"
+
+#: applications/luci-app-natter/root/usr/share/luci/menu.d/luci-app-natter.json:30
+msgid "DDNS"
+msgstr ""
+
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/ddns.js:28
+msgid "DDNS Scripts"
+msgstr "DDNS 脚本"
 
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:160
 msgid "Debug"
 msgstr "调试"
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:267
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:290
 msgid "Dynport"
 msgstr "动态端口"
 
@@ -79,6 +88,7 @@ msgstr "动态端口"
 msgid "Edit Natter Custom script: <code>/etc/natter/custom-script.sh</code>"
 msgstr "编辑 Natter 自定义脚本: <code>/etc/natter/custom-script.sh</code>"
 
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/ddns.js:33
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:101
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:190
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/notify.js:32
@@ -103,6 +113,10 @@ msgstr "外部监听接口"
 msgid "External Port"
 msgstr "外部端口"
 
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/ddns.js:86
+msgid "FQDN"
+msgstr ""
+
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:212
 msgid "Firewall DNAT"
 msgstr "防火墙 DNAT"
@@ -115,6 +129,10 @@ msgstr "转发模式"
 msgid "Grant access to Natter procedures"
 msgstr "授予访问 LuCI 应用 Natter 的权限"
 
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/ddns.js:91
+msgid "IPv4 Record"
+msgstr "IPv4 记录"
+
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:133
 msgid "If the result is not NAT 1,"
 msgstr "如果结果不是 NAT 1，"
@@ -123,15 +141,15 @@ msgstr "如果结果不是 NAT 1，"
 msgid "Info"
 msgstr "信息"
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:268
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:291
 msgid "Internal Port follow Internet Port"
 msgstr "内部服务器端口跟随互联网端口"
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:242
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:258
 msgid "Internal Server IP"
 msgstr "内部服务器 IP"
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:274
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:283
 msgid "Internal Server Port"
 msgstr "内部服务器端口"
 
@@ -153,7 +171,7 @@ msgstr "仅开放端口"
 msgid "Keep-Alive Server"
 msgstr "Keep-Alive 服务器"
 
-#: applications/luci-app-natter/root/usr/share/luci/menu.d/luci-app-natter.json:38
+#: applications/luci-app-natter/root/usr/share/luci/menu.d/luci-app-natter.json:46
 msgid "Log"
 msgstr "日志"
 
@@ -161,7 +179,7 @@ msgstr "日志"
 msgid "Log level"
 msgstr "日志等级"
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:297
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:341
 msgid "NAT loopback"
 msgstr "NAT 环回"
 
@@ -186,6 +204,7 @@ msgstr "通知"
 msgid "Notify Scripts"
 msgstr "通知脚本"
 
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/ddns.js:62
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:235
 msgid "Open External Port"
 msgstr "开放外部端口"
@@ -194,7 +213,7 @@ msgstr "开放外部端口"
 msgid "Open Port under FullCone NAT (NAT 1)"
 msgstr "在 FullCone NAT (NAT 1) 网络下开放端口"
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:340
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:335
 msgid "Password"
 msgstr "密码"
 
@@ -219,14 +238,33 @@ msgstr "私有 API 域名"
 msgid "Protocol"
 msgstr "协议"
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:281
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/ddns.js:80
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:242
 msgid "Protocol Type"
 msgstr "协议类型"
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:302
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:297
 msgid "Refresh client listen port"
 msgstr "刷新客户端监听端口"
 
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/ddns.js:118
+msgid "SRV Protocol"
+msgstr "SRV 协议"
+
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/ddns.js:95
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/ddns.js:107
+msgid "SRV Record"
+msgstr "SRV 记录"
+
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/ddns.js:112
+msgid "SRV Service"
+msgstr "SRV 服务名"
+
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/ddns.js:127
+msgid "SRV Target"
+msgstr "SRV 目标"
+
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/ddns.js:42
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/notify.js:41
 msgid "Script"
 msgstr "脚本"
@@ -239,7 +277,9 @@ msgstr "服务实例"
 msgid "Settings"
 msgstr "设置"
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:284
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/ddns.js:82
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/ddns.js:120
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:245
 msgid "TCP"
 msgstr ""
 
@@ -247,10 +287,15 @@ msgstr ""
 msgid "TCP STUN Server"
 msgstr "TCP STUN 服务器"
 
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/ddns.js:121
+msgid "TLS"
+msgstr ""
+
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/notify.js:67
 msgid "Text content"
 msgstr "文本内容"
 
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/ddns.js:53
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/notify.js:52
 msgid ""
 "The KEY required by the script above. See <a href=\"%s\" target=\"_blank\">"
@@ -267,15 +312,18 @@ msgstr ""
 msgid "There are no active portmap"
 msgstr "没有活动的端口映射"
 
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/ddns.js:52
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/notify.js:51
 msgid "Tokens"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:311
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:306
 msgid "Transmission"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:283
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/ddns.js:81
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/ddns.js:119
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:244
 msgid "UDP"
 msgstr ""
 
@@ -283,7 +331,7 @@ msgstr ""
 msgid "UDP STUN Server"
 msgstr "UDP STUN 服务器"
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:318
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:313
 msgid "URI Scheme"
 msgstr ""
 
@@ -291,7 +339,7 @@ msgstr ""
 msgid "Unable to save contents: %s"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:334
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:329
 msgid "Username"
 msgstr "用户名"
 
@@ -309,11 +357,11 @@ msgstr "查看 Natter Hook 脚本: <code>/usr/share/natter/natter-hook.sh</code>
 msgid "Warning"
 msgstr "警告"
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:326
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:321
 msgid "Web UI Port"
 msgstr "Web UI 端口"
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:282
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:243
 msgid "When Dynport is enabled, please donot select"
 msgstr "当 动态端口 启用, 请不要选中 "
 
@@ -325,6 +373,6 @@ msgstr "模式要求随机端口检测结果为 NAT 1"
 msgid "mode will not be available."
 msgstr "模式将不可用"
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:310
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:305
 msgid "qBittorrent"
 msgstr ""
