@@ -67,14 +67,15 @@ return view.extend({
 			let enab = uci.get('natter', sid, 'enabled') || '0';
 			let acti = uci.get('natter', sid, 'action');
 			let mode = uci.get('natter', sid, 'mode');
+			let ifna = uci.get('natter', sid, 'bind_ifname');
 			let port = uci.get('natter', sid, 'bind_port');
 			let prot = uci.get('natter', sid, 'proto');
 			let comm = uci.get('natter', sid, 'comment');
 			if ( enab === '1' )
 				if ( acti == 'bind' || (acti == 'forward' && mode == 'dnat'))
 					if ( typeof(Number(port)) == 'number' )
-						//alert([acti, mode, port, prot, comm]);
-						o.value(port, port + ' (' + prot + ': ' +comm + ')');
+						//alert([acti, mode, ifna, port, prot, comm]);
+						o.value(port, port + ' ([' + ifna + '], ' + prot.toUpperCase() + ', ' + comm + ')');
 		});
 
 		o = s.option(form.ListValue, 'proto', _('Protocol Type'));
