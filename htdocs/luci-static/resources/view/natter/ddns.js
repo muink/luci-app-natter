@@ -111,7 +111,10 @@ return view.extend({
 		o.modalonly = true;
 
 		o = s.option(form.Value, 'srv_service', _('SRV Service'));
-		o.placeholder = 'minecraft';
+		o.value('minecraft');
+		o.value('factorio');
+		o.value('http');
+		o.default = 'minecraft';
 		o.rmempty = false;
 		o.depends('srv_record', '1');
 		o.modalonly = true;
