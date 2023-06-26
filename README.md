@@ -8,10 +8,11 @@ Open Port under FullCone NAT (NAT 1)
 - [x] Transparent Port forward (Dynport)
 - [x] Refresh the listen port of the BT Client
 - [x] Port update notify script
-- [ ] Domain 302 Redirect update script
+- [ ] ~Domain 302 Redirect update script~
 - [x] A Record update script
 - [x] SRV Record update script
-- [ ] SVCB/HTTPS Record update script
+- [x] HTTPS Record update script
+- [ ] SVCB Record update script
 
 ### Screenshots
 

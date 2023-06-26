@@ -7,7 +7,7 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=luci-app-natter
-PKG_VERSION:=0.9-20230526
+PKG_VERSION:=0.9-20230626
 
 LUCI_TITLE:=LuCI Support for Natter
 LUCI_PKGARCH:=all
