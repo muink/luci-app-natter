@@ -102,7 +102,7 @@ msgstr ""
 msgid "External Port"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/ddns.js:86
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/ddns.js:87
 msgid "FQDN"
 msgstr ""
 
@@ -118,7 +118,11 @@ msgstr ""
 msgid "Grant access to Natter procedures"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/ddns.js:91
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/ddns.js:138
+msgid "HTTPS Record"
+msgstr ""
+
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/ddns.js:92
 msgid "IPv4 Record"
 msgstr ""
 
@@ -225,7 +229,7 @@ msgstr ""
 msgid "Protocol"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/ddns.js:80
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/ddns.js:81
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:242
 msgid "Protocol Type"
 msgstr ""
@@ -234,20 +238,20 @@ msgstr ""
 msgid "Refresh client listen port"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/ddns.js:118
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/ddns.js:122
 msgid "SRV Protocol"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/ddns.js:95
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/ddns.js:107
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/ddns.js:96
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/ddns.js:108
 msgid "SRV Record"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/ddns.js:112
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/ddns.js:113
 msgid "SRV Service"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/ddns.js:127
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/ddns.js:131
 msgid "SRV Target"
 msgstr ""
 
@@ -264,8 +268,12 @@ msgstr ""
 msgid "Settings"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/ddns.js:82
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/ddns.js:120
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/ddns.js:149
+msgid "SvcParams"
+msgstr ""
+
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/ddns.js:83
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/ddns.js:124
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:245
 msgid "TCP"
 msgstr ""
@@ -274,8 +282,12 @@ msgstr ""
 msgid "TCP STUN Server"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/ddns.js:121
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/ddns.js:125
 msgid "TLS"
+msgstr ""
+
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/ddns.js:142
+msgid "TargetName"
 msgstr ""
 
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/notify.js:67
@@ -306,8 +318,8 @@ msgstr ""
 msgid "Transmission"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/ddns.js:81
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/ddns.js:119
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/ddns.js:82
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/ddns.js:123
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:244
 msgid "UDP"
 msgstr ""
