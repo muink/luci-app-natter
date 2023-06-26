@@ -135,6 +135,24 @@ return view.extend({
 		o.depends('srv_record', '1');
 		o.modalonly = true;
 
+		o = s.option(form.Flag, 'https_record', _('HTTPS Record'));
+		o.default = o.disabled;
+		o.rmempty = true;
+
+		o = s.option(form.Value, 'https_target', _('TargetName'));
+		o.datatype = 'hostname';
+		o.placeholder = '. or web.example.com';
+		o.rmempty = true;
+		o.depends('https_record', '1');
+		o.modalonly = true;
+
+		o = s.option(form.Value, 'https_svcparams', _('SvcParams'));
+		o.placeholder = 'alpn="h2,http/1.1" ipv4hint= port=';
+		o.default = 'alpn="h2,http/1.1"';
+		o.rmempty = true;
+		o.depends('https_record', '1');
+		o.modalonly = true;
+
 		return m.render();
 	}
 });
