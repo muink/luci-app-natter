@@ -1,15 +1,15 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=UTF-8"
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:260
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:272
 msgid "(This device default Lan)"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:261
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:273
 msgid "(This device default Wan)"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:203
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:215
 msgid "Action"
 msgstr ""
 
@@ -21,30 +21,30 @@ msgstr ""
 msgid "Active Portmap"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:243
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:246
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:255
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:258
 msgid "Both"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:106
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:134
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:118
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:146
 msgid "Check"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:104
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:116
 msgid "Check NAT Status (Port 3456)"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:132
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:144
 msgid "Check NAT Status (Random port)"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:304
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:316
 msgid "Client Name"
 msgstr ""
 
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/ddns.js:38
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:199
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:211
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/notify.js:37
 msgid "Comment"
 msgstr ""
@@ -65,11 +65,11 @@ msgstr ""
 msgid "DDNS Scripts"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:160
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:172
 msgid "Debug"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:290
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:302
 msgid "Dynport"
 msgstr ""
 
@@ -78,13 +78,13 @@ msgid "Edit Natter Custom script: <code>/etc/natter/custom-script.sh</code>"
 msgstr ""
 
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/ddns.js:33
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:101
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:190
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:113
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:202
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/notify.js:32
 msgid "Enable"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:163
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:175
 msgid "Error"
 msgstr ""
 
@@ -93,7 +93,7 @@ msgstr ""
 msgid "External Addr"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:219
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:231
 msgid "External Listen Interface"
 msgstr ""
 
@@ -106,11 +106,11 @@ msgstr ""
 msgid "FQDN"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:212
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:224
 msgid "Firewall DNAT"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:210
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:222
 msgid "Forward Mode"
 msgstr ""
 
@@ -126,23 +126,23 @@ msgstr ""
 msgid "IPv4 Record"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:133
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:145
 msgid "If the result is not NAT 1,"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:161
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:173
 msgid "Info"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:291
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:303
 msgid "Internal Port follow Internet Port"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:258
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:270
 msgid "Internal Server IP"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:283
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:295
 msgid "Internal Server Port"
 msgstr ""
 
@@ -156,11 +156,11 @@ msgstr ""
 msgid "Internet Port"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:204
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:216
 msgid "Just Open Ports"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:167
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:179
 msgid "Keep-Alive Server"
 msgstr ""
 
@@ -168,11 +168,11 @@ msgstr ""
 msgid "Log"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:159
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:171
 msgid "Log level"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:341
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:353
 msgid "NAT loopback"
 msgstr ""
 
@@ -198,7 +198,7 @@ msgid "Notify Scripts"
 msgstr ""
 
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/ddns.js:62
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:235
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:247
 msgid "Open External Port"
 msgstr ""
 
@@ -206,17 +206,17 @@ msgstr ""
 msgid "Open Port under FullCone NAT (NAT 1)"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:335
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:347
 msgid "Password"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:105
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:117
 msgid ""
 "Please check if the <a href=\"%s\" target=\"_blank\"><b>rule</b></a> "
 "<b>'NatTypeTest'</b> exists and enabled first."
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:185
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:197
 msgid "Port Rules"
 msgstr ""
 
@@ -230,12 +230,17 @@ msgid "Protocol"
 msgstr ""
 
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/ddns.js:81
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:242
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:254
 msgid "Protocol Type"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:297
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:309
 msgid "Refresh client listen port"
+msgstr ""
+
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:101
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:102
+msgid "Reload"
 msgstr ""
 
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/ddns.js:122
@@ -260,7 +265,7 @@ msgstr ""
 msgid "Script"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:205
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:217
 msgid "Service Instances"
 msgstr ""
 
@@ -274,11 +279,11 @@ msgstr ""
 
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/ddns.js:83
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/ddns.js:124
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:245
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:257
 msgid "TCP"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:173
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:185
 msgid "TCP STUN Server"
 msgstr ""
 
@@ -314,21 +319,21 @@ msgstr ""
 msgid "Tokens"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:306
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:318
 msgid "Transmission"
 msgstr ""
 
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/ddns.js:82
 #: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/ddns.js:123
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:244
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:256
 msgid "UDP"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:179
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:191
 msgid "UDP STUN Server"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:313
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:325
 msgid "URI Scheme"
 msgstr ""
 
@@ -336,13 +341,13 @@ msgstr ""
 msgid "Unable to save contents: %s"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:329
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:341
 msgid "Username"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:133
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:211
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:213
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:145
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:223
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:225
 msgid "Via Natter"
 msgstr ""
 
@@ -350,26 +355,26 @@ msgstr ""
 msgid "View Natter Hook script: <code>/usr/share/natter/natter-hook.sh</code>"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:162
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:174
 msgid "Warning"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:321
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:333
 msgid "Web UI Port"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:243
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:255
 msgid "When Dynport is enabled, please donot select"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:211
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:223
 msgid "mode requires Random port test is NAT 1"
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:133
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:145
 msgid "mode will not be available."
 msgstr ""
 
-#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:305
+#: applications/luci-app-natter/htdocs/luci-static/resources/view/natter/main.js:317
 msgid "qBittorrent"
 msgstr ""
