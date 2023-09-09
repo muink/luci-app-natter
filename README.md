@@ -20,6 +20,8 @@ Open Port under FullCone NAT (NAT 1)
 
 ### How to install
 
+- The better choice: [luci-app-natmapt][]
+
 1. Goto ~~[releases](https://github.com/muink/luci-app-natter/tree/releases)~~ [here](https://fantastic-packages.github.io/packages/)
 2. Download the latest version of ipk
 3. Login router and goto **System --> Software**
@@ -52,6 +54,7 @@ make menuconfig
 make package/luci-app-natter/compile V=99
 ```
 
+[luci-app-natmapt]: https://github.com/muink/luci-app-natmapt
 [Natter]: https://github.com/muink/openwrt-Natter
 
 ### License
